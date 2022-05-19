@@ -1,1 +1,1 @@
-# Bath-Spa-Wed-Dev-Course-BenW
+# Bath-Spa-Web-Dev-Course-BenW
