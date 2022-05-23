@@ -12,15 +12,31 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    
 }
 
-.container2 {}
+.navbar-left {
+    float: left;
+}
+
+.navbar-right {
+    float: right;
+    padding-right: 100px;
+    border-left: 50px;
+}
+
+.container2 {
+    display: grid;
+}
 
 .container3 {}
 
 
 .container4 {
-    border-radius: 50%;
-    width: 111.25px;
-    height: 140px;
+    display: grid;
+    border-radius: 25%;
+    width: 445px;
+    height: 560px;
+    float: right;
 }
