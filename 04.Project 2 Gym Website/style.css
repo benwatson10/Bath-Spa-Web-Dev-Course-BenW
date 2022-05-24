@@ -1,0 +1,48 @@
+body {
+    background-image: url(Images/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color: #E6E9CA;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  
+}  
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20x;
+    font-size: 23px;
+}
+
+p.navbar {
+     margin-top: 10pc;
+     text-align: center;
+    
+}
+
+h1 {
+    display: flex;
+    justify-content: center; 
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    margin-top: 2pc;
+    justify-content: center;
+}
+
+button {
+   margin-top: 1pc;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 25px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    color: CAEC6B;
+    width: 20%;
+    height: 80%;
+    background-color: #BABABA;
+}
