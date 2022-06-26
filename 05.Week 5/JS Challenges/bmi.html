@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    
+    function bmiCalculator (w, h) {
+        let calc = Math.floor ( w / (h * h))
+         if (calc <= 18.5 ) {
+             console.log("Your BMI is " + calc + ", so you are underweight.")
+         } else if (calc <=24.9) { 
+             console.log("Your BMI is " + calc + ", so you have a normal weight.")
+         } else { console.log("Your BMI is " + calc + ", so you are overweight.")}
+    }
+
+</script> 
+</body>
+</html>

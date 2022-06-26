@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+
+
+/*----about----*/
+
+body {
+    display: flex;
+    background-image: url("images/about.png");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+.page-info {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    float: right;
+    list-style: none;
+    margin-left: 51pc;
+    margin-right: 5pc;
+    margin-top: 100px;
+    text-align: right;
+    
+}
+
+li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+#p {
+    color: #797979;
+    font-weight: 300;
+}
+
+#h2 {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+#br {
+    margin-top: -30px;
+    margin-left: 8pc;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: #797979;
+}
+
+/*---courses---*/
+
+
+
+/*---contact---*/
+
+
+
+
+/*----footer----*/
+
+
+
+
+/*---social-icons---*/
+
+
+
+@media only screen and (max-width: 770px){
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
