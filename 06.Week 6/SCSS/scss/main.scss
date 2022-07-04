@@ -1,0 +1,61 @@
+
+$colours:(
+
+primary:  #f94c66,
+primary-light: lighten (#f94c66, 40%),
+primary-dark: darken (#f94c66, 40%),
+accent: #446bf8
+
+);
+
+$padding: 15px;
+$border: 15px;
+
+@function colour($colour-name){
+    @return map-get($colours,$colour-name)
+}
+
+body{
+    
+    font-family:'Poppins';
+    margin:0;
+    
+    #bg{
+        
+        background-color: colour(primary);
+        clip-path: polygon(100% 0, 100% 63%, 51% 100%, 0 100%, 0 0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    main {
+
+    header a {
+        color: #fff;
+        text-decoration: none;
+        padding: $padding;
+        display: block;
+        text-transform: uppercase;
+        }
+        
+
+      section#card {
+            background: #fff;
+            padding: 20px;
+            margin: 1em auto;
+            border-radius: $border;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 80%; 
+        }
+
+    }
+       
+            
+
+}
+
+
+
+

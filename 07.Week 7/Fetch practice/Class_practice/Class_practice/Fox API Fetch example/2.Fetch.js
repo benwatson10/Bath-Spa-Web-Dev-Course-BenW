@@ -49,9 +49,9 @@
 //     console.log("Before fetching data")
 //     getData();
 
-// const fetch_btn=document.getElementById('myBtn');
-// const fox_result=document.getElementById('result');
-// fetch_btn.addEventListener('click',getData);
+const fetch_btn=document.getElementById('myBtn');
+const fox_result=document.getElementById('result');
+fetch_btn.addEventListener('click',getData);
 
 
 function getData(){
@@ -66,3 +66,5 @@ function getData(){
     }
 
     getData();
+
+    
