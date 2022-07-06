@@ -1,7 +1,9 @@
 body {
-  background-color: #fff;
+  background-color: #faeee7;
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #594a4e;
 }
 
 /*hero section flexbox layout*/
@@ -47,7 +49,10 @@ body {
 
 /*hero section styling*/
 .h1-text {
-  background-color: font-family("Lora", sans-serif);
+  font-family: "Lora", sans-serif !important;
+  color: #33272a !important;
+  font-weight: 700;
+  font-size: 70px;
 }
 
 /*hero section photo styling*/
@@ -55,7 +60,23 @@ body {
   max-width: 80%;
   height: auto;
   width: auto\9 ;
+  background-color: #c3f0ca;
   border-radius: 51% 49% 41% 59%/57% 70% 30% 43%;
+}
+
+/* button styling */
+.btn {
+  background-color: #ff8ba7 !important;
+  color: #33272a;
+  border: none;
+  font-weight: 700;
+}
+
+.btn:active,
+.btn:hover,
+.btn:focus {
+  background-color: #ff8ba7 !important;
+  color: #594a4e;
 }
 
 /* Media query */
@@ -68,6 +89,10 @@ body {
   .hero-bio {
     margin-top: 20px;
     margin-left: auto;
+  }
+
+  #hi-text, #im-text, #ben-text {
+    margin-left: 20px;
   }
 
   .hero-flex-img {
