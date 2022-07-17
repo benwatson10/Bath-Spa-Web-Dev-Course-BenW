@@ -21,6 +21,8 @@ body {
 /*hero section flexbox layout*/
 .hero-flex-container {
   display: flex;
+  margin-bottom: 70px;
+  border: 2px solid yellow;
 }
 
 .hero-bio {
@@ -34,54 +36,34 @@ body {
 .hero-flex-img {
   margin-right: 50px;
   margin-top: 100px;
-  -webkit-animation: text-reveal-box 1s ease;
-          animation: text-reveal-box 1s ease;
-  -webkit-animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
-          animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  /* animation: text-reveal-box 1s ease;
+   animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s; */
 }
 
-@-webkit-keyframes reveal {
+/* @keyframes reveal {
   0% {
-    transform: translate(0, 100%);
+    transform: translate(0,100%);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(0,0);
   }
 }
-
-@keyframes reveal {
-  0% {
-    transform: translate(0, 100%);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
+*/
 /*hero section bio layout*/
 #hi-text {
   margin-left: 5rem;
   color: transparent;
-  -webkit-animation: text-reveal 1s ease;
-          animation: text-reveal 1s ease;
-  -webkit-animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
-          animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  /*animation: text-reveal 1s ease;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s; */
 }
 
 #im-text {
   margin-left: 10rem;
-  -webkit-animation: text-reveal 1s ease;
-          animation: text-reveal 1s ease;
-  -webkit-animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
-          animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
 }
 
 #ben-text {
   margin-left: 15rem;
   margin-bottom: 20px;
-  -webkit-animation: text-reveal 1s ease;
-          animation: text-reveal 1s ease;
-  -webkit-animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
-          animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
 }
 
 .hero-p {
@@ -107,6 +89,7 @@ body {
   width: auto\9 ;
   background-color: #c3f0ca;
   border-radius: 51% 49% 41% 59%/57% 70% 30% 43%;
+  box-shadow: 7px 13px 22px -2px rgba(77, 77, 77, 0.95);
 }
 
 /* button styling */
@@ -122,6 +105,77 @@ body {
 .btn:focus {
   background-color: #ff8ba7 !important;
   color: #594a4e;
+}
+
+/* My Skills Section layout*/
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: 2px solid yellow;
+}
+
+.bridge-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: 2px solid yellow;
+}
+
+.balloon-photo {
+  height: auto;
+  width: 30%;
+  border-radius: 48% 52% 21% 79%/83% 48% 52% 17%;
+  box-shadow: 7px 13px 22px -2px rgba(77, 77, 77, 0.95);
+}
+
+#my-skills-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* My Skills icons section */
+.skills-icon-container {
+  margin-bottom: 5px;
+  filter: grayscale(100%);
+  border: 2px solid yellow;
+}
+
+.icon {
+  width: 137px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 2px solid yellow;
+}
+
+.icon-name {
+  margin-top: 5px;
+}
+
+.icon-row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  border: 2px solid yellow;
+}
+
+.icon-row-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid yellow;
 }
 
 /* Media query */
@@ -148,9 +202,4 @@ body {
   section {
     flex: 1;
   }
-}
-/*
-icon size for next page
-.icon{
-    width: 96px;
-}*//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
