@@ -4,7 +4,6 @@ body {
    padding: 0; 
    font-family: "Montserrat", sans-serif;
    color: #594a4e;
-   height: 5000px;
 }
 
 /*hero scrolling text bg*/
@@ -116,18 +115,7 @@ body {
      color: #594a4e;
 }
 
-/* My Skills Section layout*/
-
-.about-me-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border: 2px solid yellow
-}
+/* bridge imgage */
 
 .bridge-img {
     display: flex;
@@ -138,6 +126,12 @@ body {
     margin-top: 30px;
     margin-bottom: 20px;
     border: 2px solid yellow
+}
+
+/* My Skills Section layout*/
+
+.about-me-container {
+    @extend .bridge-img
 }
 
 .balloon-photo {
@@ -189,37 +183,72 @@ margin-bottom: 20px;
     border: 2px solid yellow
 }
 
-/* portfolio senction */
+/* portfolio section */
 
 .portfolio-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border: 2px solid yellow
+    @extend .bridge-img
 }
 
-.portfolio-project {
+.portfolio-projects-flexbox-1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-items: center;
     margin-left: 150px;
     margin-right: auto;
-
     border: 2px solid yellow;
 }
 
-.portfolio-container {
+.portfolio-projects-flexbox-2 {
+    @extend .portfolio-projects-flexbox-1;
+    margin-top: 20px;
+    
+}
+
+.portfolio-items{
     background-color: #c3f0ca;
     margin: 10px;
     padding: 20px;
-    border: 2px solid yellow;
+    border: 2px solid blue;
+    border-radius: 25px;
+    box-shadow: 7px 13px 22px -2px rgba(77,77,77,0.95);
     
 }
+
+/* contact me section */
+
+.contact-me-heading {
+    @extend .bridge-img
+} 
+
+.contact-me-box {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    display: block;
+    background-color: #c3f0ca;
+    padding: 50px;
+}
+
+.form-container {
+    width: 50px;
+}
+
+#form-name, #form-email, #form-subject, #message, #email-btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+
+.contact-details-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 50px;
+}
+
+
 
 
 /* Media query */
