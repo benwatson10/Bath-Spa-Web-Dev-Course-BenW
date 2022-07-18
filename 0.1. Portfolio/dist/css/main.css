@@ -200,6 +200,8 @@ body {
   display: block;
   background-color: #c3f0ca;
   padding: 50px;
+  border-radius: 25px;
+  box-shadow: 7px 13px 22px -2px rgba(77, 77, 77, 0.95);
 }
 
 .form-container {
