@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css"">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
 
 </head>
 <body>
@@ -42,10 +42,7 @@
                 <h1 class="h1-text" id="ben-text">BEN!</h1>
             </div>     
             
-            <div data-aos="fade-left" data-aos-duration="1500" >
-            <h3 class="hero-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Neque nulla numquam, hic, enim, impedit eius maiores nam ratione earum qui id ipsa eum cupiditate. Ea harum hic dolore distinctio dolor!</h3>
-            <button type="button" id="portfolio-btn" class="btn btn-primary btn-lg btn-block shadow-none">Jump To Portfolio</button>
-            </div>
+            
         </div>
 
         <div class="hero-flex-img">
@@ -59,9 +56,16 @@
 
 <!-- End of Hero Section -->
 
-<section class="bridge-img" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+<section class="bridge-img">
 
-    <img class="balloon-photo" src="Images/balloon-cropped.jpg" alt="balloon">
+    <div class="intro" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+        <img class="balloon-photo" src="Images/balloon-cropped.jpg" alt="balloon">
+    </div>
+
+    <div class="intro-text" data-aos="fade-left" data-aos-duration="1500" >
+        <h3 class="hero-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Neque nulla numquam, hic, enim, impedit eius maiores nam ratione earum qui id ipsa eum cupiditate. Ea harum hic dolore distinctio dolor!</h3>
+        <button type="button" id="portfolio-btn" class="btn btn-primary btn-lg btn-block shadow-none">Jump To Portfolio</button>
+    </div>
     
 </section>
 
@@ -104,8 +108,6 @@
             </div>
         </div>     
     
-        
-     
         <div class="icon-row-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
 
             <div class="icon">        
@@ -146,7 +148,11 @@
     <div class="portfolio-projects-flexbox-1" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
 
         <div class="portfolio-items">
-            <img src="Images/RPG-img.png" alt="rpg-img">
+            
+            <div class="port-img-box">
+                <img class="port-img" src="Images/RPG-img.png" alt="rpg-img">
+            </div>
+
             <h2>Random Password Generator</h2>
             <h3>JavaScipt CSS HTML</h3>
         </div>
@@ -162,7 +168,7 @@
     <div class="portfolio-projects-flexbox-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
 
         <div class="portfolio-items">
-            <img src="Images/RPG-img.png" alt="rpg-img">
+             <img src="Images/RPG-img.png" alt="rpg-img">
             <h2>Random Password Generator</h2>
             <h3>JavaScipt CSS HTML</h3>
         </div>
@@ -190,22 +196,30 @@
 
     <div class="contact-me-box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
 
-        <div class="form-container">
-            <form class="email-form" action="https://formspree.io/f/mnqwejzq" method="POST">
-                <input type="text" id="form-name" name="name" placeholder="YOUR NAME" required>
-                <input type="text" id="form-email" name="email" placeholder="EMAIL ADDRESS" required>
-                <input type="text" id="form-subject" name="subject" placeholder="SUBJECT" required>
-                <textarea id="message" name="message" placeholder="MESSAGE" required style="height: 100px;"></textarea>
-                <button id="email-btn" type="submit">Send</button>
-            </form>
-        </div>
-
        <div class="contact-details-icons">
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-        </div>
+
+            <button type="contact-button"  id="cv-btn" class="btn btn-primary btn-lg btn-block shadow-none">
+                <ion-icon name="document-text-outline"></ion-icon>
+                <h2>My CV</h2>
+            </button>
+
+            <button type="contact-button"  id="git-btn" class="btn btn-primary btn-lg btn-block shadow-none">
+                <ion-icon name="logo-github"></ion-icon>
+                <h2>/benwatson10</h2>
+            </button>
+
+            <button type="contact-button"  id="linkedin-btn" class="btn btn-primary btn-lg btn-block shadow-none">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <h2>/ben-watson</h2>
+            </button>
+
+            <button type="contact-button"  id="email-me-btn" class="btn btn-primary btn-lg btn-block shadow-none">
+                <ion-icon name="mail-outline"></ion-icon>
+                
+            </button>
+            <h2>ben.watson10<br>@gmail.com</h2>
+
+        </div>  
 
     </div>
 
@@ -216,8 +230,8 @@
 
 <script src="index.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+<script> AOS.init(); </script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
 </body>
 </html>
