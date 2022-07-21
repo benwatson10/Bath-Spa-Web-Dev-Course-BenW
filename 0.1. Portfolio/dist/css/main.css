@@ -9,7 +9,6 @@ body {
 /* sass variable library */
 /*
 
-is there a way to pass box shadow and border radius to each box
 make varible for colours and fonts and buttons?
 
 */
@@ -27,7 +26,7 @@ make varible for colours and fonts and buttons?
 /*hero section flexbox layout*/
 .hero-flex-container {
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 85px;
   border: 2px solid yellow;
 }
 
@@ -58,7 +57,7 @@ make varible for colours and fonts and buttons?
 */
 /*hero section bio layout*/
 #hi-text {
-  margin-left: 9rem;
+  margin-left: 8rem;
   border: 2px solid yellow;
   margin-top: -7rem;
   /*animation: text-reveal 1s ease;
@@ -66,22 +65,14 @@ make varible for colours and fonts and buttons?
 }
 
 #im-text {
-  margin-left: 14rem;
+  margin-left: 13rem;
   border: 2px solid yellow;
 }
 
 #ben-text {
-  margin-left: 19rem;
+  margin-left: 18rem;
   margin-bottom: 20px;
   border: 2px solid yellow;
-}
-
-.hero-p {
-  margin-left: 20px;
-}
-
-#portfolio-btn {
-  margin-left: 23rem;
 }
 
 /*hero section styling*/
@@ -89,18 +80,54 @@ make varible for colours and fonts and buttons?
   font-family: "Lora", sans-serif !important;
   color: #33272a !important;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 150px;
   overflow: visible;
 }
 
 /*hero section photo styling*/
 #profile-img {
-  max-width: 80%;
+  max-width: 85%;
   height: auto;
   width: auto\9 ;
   background-color: #c3f0ca;
   border-radius: 51% 49% 41% 59%/57% 70% 30% 43%;
   box-shadow: 7px 13px 22px -2px rgba(77, 77, 77, 0.95);
+}
+
+/* Intro layout */
+.intro-flex-container {
+  display: flex;
+  margin-left: 70px;
+  margin-right: 40px;
+  border: 2px solid yellow;
+}
+
+.intro-img-2 {
+  flex: 1;
+}
+
+.balloon-photo {
+  height: 30rem;
+  margin-left: 130px;
+  margin-right: 30px;
+  width: auto;
+  border-radius: 48% 52% 21% 79%/83% 48% 52% 17%;
+  box-shadow: 7px 13px 22px -2px rgba(77, 77, 77, 0.95);
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-right: 50px;
+  float: left;
+  border: 2px solid red;
+}
+
+#portfolio-btn {
+  margin-top: 20px;
+  margin-right: 20rem;
+  margin-left: 100px;
 }
 
 /* button styling */
@@ -118,8 +145,8 @@ make varible for colours and fonts and buttons?
   color: #594a4e;
 }
 
-/* bridge imgage */
-.bridge-img, .contact-me-heading, .portfolio-heading, .about-me-container {
+/* My Skills Section layout*/
+.intro-img, .contact-me-heading, .portfolio-heading, .about-me-container {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -130,12 +157,8 @@ make varible for colours and fonts and buttons?
   border: 2px solid yellow;
 }
 
-/* My Skills Section layout*/
-.balloon-photo {
-  height: auto;
-  width: 30%;
-  border-radius: 48% 52% 21% 79%/83% 48% 52% 17%;
-  box-shadow: 7px 13px 22px -2px rgba(77, 77, 77, 0.95);
+.about-me-container {
+  align-items: center;
 }
 
 #my-skills-header {
@@ -154,7 +177,7 @@ make varible for colours and fonts and buttons?
   height: auto;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   filter: grayscale(100%);
   border: 2px solid yellow;
@@ -185,6 +208,10 @@ make varible for colours and fonts and buttons?
 }
 
 /* portfolio section */
+.portfolio-heading {
+  align-items: center;
+}
+
 .portfolio-projects-flexbox-1, .portfolio-projects-flexbox-2 {
   display: flex;
   flex-wrap: wrap;
@@ -222,30 +249,21 @@ make varible for colours and fonts and buttons?
 }
 
 /* contact me section */
+.contact-me-heading {
+  align-items: center;
+}
+
 .contact-me-box {
+  display: grid;
   width: 1000px;
   margin: auto;
   margin-bottom: 100px;
   box-sizing: border-box;
   display: block;
   background-color: #fffffe;
-  padding: 50px;
+  padding: 70px;
   border-radius: 25px;
   box-shadow: 7px 13px 22px -2px rgba(77, 77, 77, 0.95);
-}
-
-.form-container {
-  width: 50px;
-}
-
-#form-name, #form-email, #form-subject, #message, #email-btn {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 50px;
-}
-
-.contact-me-box {
-  padding: 70px;
 }
 
 .contact-details-icons {
@@ -254,10 +272,41 @@ make varible for colours and fonts and buttons?
   align-items: center;
 }
 
-ion-icon {
-  font-size: 5rem;
+.contact-user-names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  margin-top: 40px;
+  margin-left: 50px;
 }
 
+.contact-button {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+ion-icon {
+  font-size: 9rem;
+}
+
+/*#cv {
+    margin-left: 20px;
+}
+
+#git {
+    margin-left: 70px;
+}
+
+#link {
+    margin-left: 40px;
+}
+
+#mail {
+    margin-left: 40px;
+    margin-top: 10px;
+}*/
 /* Media query */
 @media (max-width: 500px) {
   .hero-flex-container {

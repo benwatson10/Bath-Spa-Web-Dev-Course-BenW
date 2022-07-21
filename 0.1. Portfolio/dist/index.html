@@ -41,8 +41,7 @@
             <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1500">    
                 <h1 class="h1-text" id="ben-text">BEN!</h1>
             </div>     
-            
-            
+              
         </div>
 
         <div class="hero-flex-img">
@@ -56,18 +55,30 @@
 
 <!-- End of Hero Section -->
 
-<section class="bridge-img">
+<!-- Intro Section -->
 
-    <div class="intro" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-        <img class="balloon-photo" src="Images/balloon-cropped.jpg" alt="balloon">
-    </div>
+<section class="intro">
 
-    <div class="intro-text" data-aos="fade-left" data-aos-duration="1500" >
-        <h3 class="hero-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Neque nulla numquam, hic, enim, impedit eius maiores nam ratione earum qui id ipsa eum cupiditate. Ea harum hic dolore distinctio dolor!</h3>
-        <button type="button" id="portfolio-btn" class="btn btn-primary btn-lg btn-block shadow-none">Jump To Portfolio</button>
+    <div class="intro-flex-container">
+
+        <div class="intro-img-2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">
+            <img class="balloon-photo" src="Images/balloon-cropped.jpg" alt="balloon">
+        </div>
+
+        <div class="intro-text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
+
+            <h3 class="intro-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Neque nulla numquam, hic, enim, impedit eius maiores nam ratione earum qui id ipsa eum cupiditate. Ea harum hic dolore distinctio dolor!</h3>
+            <a href="#portfolio">
+                <button type="button" id="portfolio-btn" class="btn btn-primary btn-lg btn-block shadow-none">Jump To Portfolio</button>
+            </a>
+            
+        </div>
+
     </div>
     
 </section>
+
+<!-- End of Intro Section -->
 
 <!-- My Skills Section -->
 
@@ -138,7 +149,7 @@
 
 <!-- Portfolio section -->
 
-<section class="portfolio">
+<section id="portfolio">
 
     <div class="portfolio-heading" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800"> 
         <h1 id="porfolio-header">My Portfolio...</h1>
@@ -147,12 +158,12 @@
 
     <div class="portfolio-projects-flexbox-1" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
 
-        <div class="portfolio-items">
-            
+        <div class="portfolio-items">  
             <div class="port-img-box">
-                <img class="port-img" src="Images/RPG-img.png" alt="rpg-img">
+                <a href="Random-Password-Gen-BenW/index.html">
+                    <img class="port-img" src="Images/RPG-img.png" alt="rpg-img">
+                </a>
             </div>
-
             <h2>Random Password Generator</h2>
             <h3>JavaScipt CSS HTML</h3>
         </div>
@@ -200,26 +211,32 @@
 
             <button type="contact-button"  id="cv-btn" class="btn btn-primary btn-lg btn-block shadow-none">
                 <ion-icon name="document-text-outline"></ion-icon>
-                <h2>My CV</h2>
+                
             </button>
 
             <button type="contact-button"  id="git-btn" class="btn btn-primary btn-lg btn-block shadow-none">
                 <ion-icon name="logo-github"></ion-icon>
-                <h2>/benwatson10</h2>
+                
             </button>
 
             <button type="contact-button"  id="linkedin-btn" class="btn btn-primary btn-lg btn-block shadow-none">
                 <ion-icon name="logo-linkedin"></ion-icon>
-                <h2>/ben-watson</h2>
+                
             </button>
 
             <button type="contact-button"  id="email-me-btn" class="btn btn-primary btn-lg btn-block shadow-none">
-                <ion-icon name="mail-outline"></ion-icon>
-                
+                <ion-icon name="mail-outline"></ion-icon>   
             </button>
-            <h2>ben.watson10<br>@gmail.com</h2>
+           
+        </div> 
+        
+        <div class="contact-user-names">
+            <h4 id="cv">My CV</h4>
+            <h4 id="git">/benwatson10</h4>
+            <h4 id="link">/ben-watson</h4>
+            <h4 id="mail">ben.watson10<br>@googlemail.com</h4>
 
-        </div>  
+        </div>
 
     </div>
 
