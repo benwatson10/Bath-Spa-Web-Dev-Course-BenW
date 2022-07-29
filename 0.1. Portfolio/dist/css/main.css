@@ -4,28 +4,22 @@ html {
 }
 
 body {
-  background-color: #faeee7;
-  margin: 0;
-  padding: 0;
+  background-color: colour(background);
+  margin: 0px;
+  padding: 0px;
   height: 100%;
   width: 100%;
   font-family: "Montserrat", sans-serif;
-  color: #594a4e;
+  color: colour(font);
+  overflow-x: hidden;
 }
 
 section {
   display: block;
-  height: 100%;
-  width: 100%;
   box-sizing: border-box;
 }
 
 /* sass variable library */
-/*
-
-make varible for colours and fonts and buttons?
-
-*/
 /*hero scrolling text bg*/
 .background-scroll-text {
   position: fixed;
@@ -141,7 +135,7 @@ make varible for colours and fonts and buttons?
 #portfolio-btn {
   margin-top: 20px;
   margin-right: 20rem;
-  margin-left: 100px;
+  margin-left: 20rem;
 }
 
 /* button styling */
@@ -241,7 +235,7 @@ make varible for colours and fonts and buttons?
 }
 
 .portfolio-items {
-  background-color: #fffffe;
+  background-color: #faeee7;
   margin: 10px;
   padding: 20px;
   border: 2px solid blue;
@@ -261,8 +255,12 @@ make varible for colours and fonts and buttons?
 .port-img {
   transition: transform 6s;
   display: block;
-  width: 110%;
+  width: 155%;
   height: auto;
+}
+
+#RPG, #unit {
+  width: 100%;
 }
 
 /*display: block;
@@ -286,7 +284,7 @@ object-fit: cover;*/
   margin-bottom: 100px;
   box-sizing: border-box;
   display: block;
-  background-color: #fffffe;
+  background-color: #faeee7;
   padding: 70px;
   border-radius: 25px;
   box-shadow: 7px 13px 22px -2px rgba(77, 77, 77, 0.95);
@@ -298,15 +296,6 @@ object-fit: cover;*/
   align-items: center;
 }
 
-.contact-user-names {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px;
-  margin-top: 40px;
-  margin-left: 50px;
-}
-
 .contact-button {
   display: flex;
   justify-content: center;
@@ -315,6 +304,27 @@ object-fit: cover;*/
 
 ion-icon {
   font-size: 9rem;
+}
+
+#thank-you-footer {
+  display: flex;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #faeee7;
+  margin-block: 0.5em;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff8ba7;
+  border: 1rem, solid #ff8ba7;
+  border-radius: 100vw;
 }
 
 /*#cv {
@@ -334,32 +344,90 @@ ion-icon {
     margin-top: 10px;
 }*/
 /* Media query */
-@media (max-width: 500px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
+@media only screen and (max-width: 767px) {
   .hero-flex-container {
     flex-direction: column;
     flex-direction: column-reverse;
   }
-  .hero-bio {
-    margin-top: 20px;
-    margin-left: auto;
-  }
   #hi-text, #im-text, #ben-text {
-    margin-left: 20px;
+    margin-left: 70px;
   }
   .hero-flex-img {
     margin-top: 20px;
     margin-right: auto;
-    margin-left: 40px;
+    margin-left: 60px;
+    align-items: center;
   }
   #portfolio-btn {
     margin-left: 90px;
   }
   section {
     flex: 1;
+  }
+  .intro-flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro-text {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-left: 40px;
+    align-items: center;
+  }
+  .about-me-container {
+    justify-content: center;
+    margin-left: 40px;
+    align-items: center;
+  }
+  .icon-row-1 {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .icon-row-2 {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .portfolio-heading {
+    justify-content: center;
+    margin-left: 40px;
+    align-items: center;
+  }
+  .port-img-box {
+    width: 100%;
+    align-items: center;
+  }
+  .portfolio-items {
+    max-width: 100%;
+  }
+  .portfolio-heading {
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .contact-me-box {
+    width: 80%;
+  }
+  .contact-details-icons {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .hero {
+    margin-bottom: 10%;
+  }
+  .h1-text {
+    font-size: 250px;
+    overflow: visible;
+  }
+  #profile-img {
+    max-width: 200%;
+    height: auto;
+    width: auto\9 ;
+    overflow: visible;
+  }
+  .portfolio-projects-flexbox-1, .portfolio-projects-flexbox-2 {
+    margin-left: 21%;
   }
 }/*# sourceMappingURL=main.css.map */

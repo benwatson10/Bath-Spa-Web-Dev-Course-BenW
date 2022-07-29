@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/icon-emoji-tab.svg">
     <title>Ben's Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -68,8 +69,8 @@
         <div class="intro-text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
 
             <h3 class="intro-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Neque nulla numquam, hic, enim, impedit eius maiores nam ratione earum qui id ipsa eum cupiditate. Ea harum hic dolore distinctio dolor!</h3>
-            <a href="#portfolio">
-                <button type="button" id="portfolio-btn" class="btn btn-primary btn-lg btn-block shadow-none">Jump To Portfolio</button>
+            <a href="#portfolio-header">
+                <button type="button" id="portfolio-btn" class="btn btn-primary btn-lg btn-block shadow-none" onClick="document.getElementById('portfolio').scrollIntoView();"  > Jump To Portfolio</button>
             </a>
             
         </div>
@@ -82,7 +83,7 @@
 
 <!-- My Skills Section -->
 
-<section class="my-skills">
+<section>
 
     <div class="about-me-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800"> 
         <h1 id="my-skills-header">My Skills</h1>
@@ -119,7 +120,7 @@
             </div>
         </div>     
     
-        <div class="icon-row-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
+        <div class="icon-row-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
 
             <div class="icon">        
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma"/>
@@ -149,7 +150,7 @@
 
 <!-- Portfolio section -->
 
-<section>
+<section id="portfolio">
 
     <div class="portfolio-heading" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800"> 
         <h1 id="porfolio-header">My Portfolio...</h1>
@@ -158,10 +159,10 @@
 
     <div class="portfolio-projects-flexbox-1" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
 
-        <div class="portfolio-items">  
+        <div class="portfolio-items" >  
             <div class="port-img-box">
                 <a href="https://github.com/benwatson10/random-password-gen-BenW10">
-                    <img class="port-img" src="Images/RPG-screenshot.png" alt="rpg-img">
+                    <img class="port-img" id="RPG"  src="Images/RPG-screenshot.png" alt="rpg-img">
                 </a>
             </div>
             <h2>Random Password Generator</h2>
@@ -171,7 +172,7 @@
         <div class="portfolio-items">  
             <div class="port-img-box">
                 <a href="https://github.com/benwatson10/unit-converter-BenW">
-                    <img class="port-img" src="Images/UC-screenshot.png" alt="UC-img">
+                    <img class="port-img" id="unit" src="Images/UC-screenshot.png" alt="UC-img">
                 </a>
             </div>
             <h2>Unit Converter</h2>
@@ -187,21 +188,21 @@
         <div class="portfolio-items">  
             <div class="port-img-box">
                 <a href="https://github.com/benwatson10/unit-converter-BenW">
-                    <img class="port-img" src="Images/UC-screenshot.png" alt="UC-img">
+                    <img class="port-img" src="Images/Weather API placeholder.png" alt="UC-img">
                 </a>
             </div>
             <h2>Weather App API</h2>
-            <h3>JavaScipt</h3>
+            <h3>JavaScipt API</h3>
         </div>
 
         <div class="portfolio-items">  
             <div class="port-img-box">
                 <a href="https://github.com/benwatson10/unit-converter-BenW">
-                    <img class="port-img" src="Images/UC-screenshot.png" alt="UC-img">
+                    <img class="port-img" src="Images/RPS Screenshot.png" alt="UC-img">
                 </a>
             </div>
             <h2>Rock, Paper, Scissors Game</h2>
-            <h3>JavaScipt, HTML, CSS</h3>
+            <h3>JavaScipt</h3>
         </div>
 
     </div>
@@ -226,38 +227,38 @@
             <a href="/dist/CV-pdf/Benjamin Watson CV .pdf">
                 <button type="contact-button"  id="cv-btn" class="btn btn-primary btn-lg btn-block shadow-none">
                     <ion-icon name="document-text-outline"></ion-icon>
+                    <h4 id="cv">My CV</h4>
                 </button>
             </a>
 
             <a href="https://github.com/benwatson10">
                 <button type="contact-button"  id="git-btn" class="btn btn-primary btn-lg btn-block shadow-none">
                     <ion-icon name="logo-github"></ion-icon>
+                    <h4 id="git">/benwatson10</h4>
                 </button>
             </a>
 
             <a href="https://www.linkedin.com/in/ben-watson-944a56108/">
                 <button type="contact-button"  id="linkedin-btn" class="btn btn-primary btn-lg btn-block shadow-none">
                     <ion-icon name="logo-linkedin"></ion-icon>
+                    <h4 id="link">/ben-watson</h4>
                 </button>
             </a>
 
             <a href="mailto: ben.watson10@googlemail.com.com">
                 <button type="contact-button"  id="email-me-btn" class="btn btn-primary btn-lg btn-block shadow-none">
                     <ion-icon name="mail-outline"></ion-icon>   
+                    <h4 id="mail">Email</h4>
                 </button>
             </a>
            
         </div> 
         
-        <div class="contact-user-names">
-            <h4 id="cv">My CV</h4>
-            <h4 id="git">/benwatson10</h4>
-            <h4 id="link">/ben-watson</h4>
-            <h4 id="mail">ben.watson10<br>@googlemail.com</h4>
-
-        </div>
+        
 
     </div>
+
+    <h3 id="thank-you-footer">Thanks for stopping by! Have a lovely day!!!</h3>
 
 
 </section>
